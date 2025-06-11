@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Petroleum Production Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Petroleum Production Dashboard</h1>
+    <button id="toggle-chart">Show Bar Graph</button>
+  </header>
+
+  <main>
+    <section id="table-container">
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Year</th>
+            <th>Product</th>
+            <th>Quantity (000 MT)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="chart-container" style="display: none;">
+      <canvas id="barChart"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Petroleum Data Viewer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
